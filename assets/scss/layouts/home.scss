@@ -1,0 +1,54 @@
+body {
+  &.home {
+    .container {
+      margin-left:0;
+      margin-right:0;
+      max-width:100%;
+      padding: 0;
+      position: relative;
+      width: 100%; 
+    }
+  }
+}
+.home-wrapper {
+  .home-slider {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+    .slide-one {
+      background: url(../img/slides/slider-img-one.jpg) no-repeat;
+      background-size:cover; 
+      text-align: center;
+      height: 100%;
+      img {
+        position: relative;
+        top:30%;
+        width:30%;
+      }
+    }
+  } 
+  .featured-wrapper {
+    .page-heading {
+      margin-top:2rem;
+      text-transform: uppercase;
+    }
+    .f-products {
+      margin:3rem auto;
+      text-align:center;
+      list-style: none;
+      .card-image {
+        
+      }
+      .card-body {
+        text-align: center;
+        .card-title {
+          text-transform: uppercase;
+          font-size:1.5rem;
+        }
+        .card-text {
+          display: none;
+        }
+      }
+    }
+  }
+}

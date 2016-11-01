@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background: none;
+    transition: all 0.7s ease-out;
+
+    &.header-background {
+        background:#fff;
+        .nav-wrap {
+            li {
+                a {
+                    color:#000;
+                }
+            }
+        }
+    }
+    .inner-header {
+        text-align:center;
+        margin: 0 auto;  
+    }
+    .logo-wrap {
+        width:7rem;
+        margin:1rem;
+    }
+    .nav-wrap {
+        padding: 0;
+        margin:0;
+      li {
+        list-style:none;
+        display: inline-block;
+        margin:0 0.5rem;
+        a {
+            color:#fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+      }
+    }
+    .social-media {
+        li {
+            display: inline-block;
+        }
+    }
+}

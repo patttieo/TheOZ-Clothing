@@ -1,0 +1,10 @@
+<h2 class="page-heading">{{lang 'products.featured' }}</h2>
+<div class="row">
+  <ul class="featured" data-product-type="featured">
+    {{#each products}}
+        <li class="f-products col-xs-12 col-md-6">
+            {{>components/products/card theme_settings=../theme_settings}}
+        </li>
+    {{/each}}
+  </ul>
+</div>
