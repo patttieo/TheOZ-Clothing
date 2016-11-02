@@ -28,6 +28,9 @@ body {
     }
   } 
   .featured-wrapper {
+    .row {
+      margin:0;
+    }
     .page-heading {
       margin-top:2rem;
       text-transform: uppercase;

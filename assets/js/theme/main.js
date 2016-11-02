@@ -24,19 +24,38 @@ $( document ).ready(function() {
   });
 
 
-  $("#js-open-m-nav").on("click", function() {
-      $("#js-open-m-nav").removeClass("active");
-      $(".nav-links").addClass("open-m-nav");
-      $("#js-close-m-nav").addClass("active");
-      $(".m-header").addClass("active");
+ console.log('hello?');
+
+  function openMenu() {
+    $('.m-menu-default').hide();
+    $('.m-menu-open-trigger').addClass("menu-open");
+    $('.m-menu-open-trigger').show();
+    $('.menu').addClass('menu--open');
+  }
+  function closeMenu() {
+    console.log('cool?');
+    $('.m-menu-default').show();
+    $('.m-menu-open-trigger').removeClass("menu-open");
+    $('.m-menu-open-trigger').hide();
+    $('.menu').removeClass('menu--open');
+  }
+  $('.m-menu-open-trigger').on('click', function() {
+    closeMenu();
+  });  
+  $('.m-menu-default').on('click', function() {
+    openMenu();
   });
 
-  $("#js-close-m-nav").on("click", function() {
-      $(".nav-links").removeClass("open-m-nav");
-      $("#js-open-m-nav").addClass("active");
-      $("#js-close-m-nav").removeClass("active");
-      $(".m-header").removeClass("active");
+  $('.nav-link').on('click', function() {
+    setTimeout(function() {
+      closeMenu();
+    },100);
+    
   });
 
+  $('.menu-trigger').on('click', function() {
+    $('body,html').toggleClass('m-active');
+    $('.main-container').toggleClass('m-open');
+  }); 
 
 });

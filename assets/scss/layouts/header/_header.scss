@@ -1,46 +1,64 @@
 .header {
-    width: 100%;
-    position: fixed;
-    top:0;
-    z-index: 10;
-    background: none;
-    transition: all 0.7s ease-out;
-
-    &.header-background {
+    display: none;
+}
+@media (min-width: 992px ) {
+    .header {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index: 10;
         background:#fff;
+        transition: all 0.7s ease-out;
+        max-height: 90px;
+        .inner-header {
+            text-align:center;
+            margin: 0 auto;  
+        }
+        .logo-wrap {
+            width:7rem;
+            margin:1rem;
+        }
         .nav-wrap {
             li {
+                list-style:none;
+                display: inline-block;
                 a {
+
+                    margin:0 0.5rem;
                     color:#000;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }        
+    }
+    body {
+        &.home {
+            .header {
+                background: none;
+                &.header-background {
+                    background:#fff;
+                    .nav-wrap {
+                        li {
+                            a {
+                                color:#000;
+                            }
+                        }
+                    }
+                }
+                .nav-wrap {
+                    padding: 0;
+                    margin:0;
+                  li {
+
+                    a {
+                        color:#fff;
+                    }
+                  }
                 }
             }
         }
     }
-    .inner-header {
-        text-align:center;
-        margin: 0 auto;  
-    }
-    .logo-wrap {
-        width:7rem;
-        margin:1rem;
-    }
-    .nav-wrap {
-        padding: 0;
-        margin:0;
-      li {
-        list-style:none;
-        display: inline-block;
-        margin:0 0.5rem;
-        a {
-            color:#fff;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-      }
-    }
-    .social-media {
-        li {
-            display: inline-block;
-        }
-    }
 }
+

@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "http://theoz.clothing/",
+  "port": 3000,
+  "username": "theoz",
+  "token": "f83aa28d236ce47c5702348e7a0c41bd7a9b4804",
+  "customLayouts": {
+    "products": {},
+    "search": {},
+    "brands": {},
+    "categories": {}
+  }
+}

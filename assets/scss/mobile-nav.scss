@@ -1,0 +1,43 @@
+.menu-trigger {
+  position:absolute;
+  top:1rem;
+  left:1rem;
+  z-index: 20;
+  font-size:1.4rem;
+  i {
+    color:#000;
+  }
+}
+
+.mobile-nav-wrapper {
+  width:300px;
+  height: auto;
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  border-radius: 0;
+  background: #373a3a;
+  .mobile-menu {
+    margin-top:1rem;
+    li {
+        margin:1rem 0;
+      a {
+        color:#fff;
+        font-size:2rem;
+        padding:1rem;
+      }
+    }
+  }
+  .m-social-links {
+    margin-left:1rem;
+    li {
+      margin-right:1rem;
+      display: inline-block;
+      a {
+        padding:0;
+      }
+    }
+  }
+}
