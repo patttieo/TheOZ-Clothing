@@ -14,20 +14,101 @@ body {
   .home-slider {
     height: 100vh;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
+    a {
+      text-decoration:none;
+      color:#fff;
+    } 
     .slide-one {
-      background: url(../img/slides/slider-img-one.jpg) no-repeat;
+      background:#000;
       background-size:cover; 
       text-align: center;
       height: 100%;
       img {
         position: relative;
-        top:30%;
-        width:30%;
+        margin-top:25%;
+        width:75%;
+      }
+      h2 {
+        font-size:5rem;
+        span {
+          display:block;
+          font-size:3.5rem;
+        }
+      }
+      h3 {
+        font-size:3rem;
       }
     }
   } 
+  .cta-wrapper {
+    .cta-container {
+      text-align:center;
+    }
+    .row {
+      margin:0;
+    }
+    .col-sm-12 {
+      padding:0;
+    }
+    .cta-one {
+
+      .cta-inner {
+        height:60vh;
+        background:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;      
+        color:#000;
+        h2, h3 {
+          font-weight:bold;
+        }
+        h2 {
+          text-decoration:uppercase;
+          font-size:6rem;
+        }
+        h3 {
+          font-size:4rem;
+        }
+        
+      }   
+    }
+
+    .cta-two {
+      height:60vh;
+      background:url(../img/cta-leggings.jpg)no-repeat;
+      background-size:cover;
+      text-align:left;
+      transition: all 0.3s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+      a {
+        color:#fff;
+        display:block;
+
+      }
+      .cta-content {
+        float:left;
+        padding:2rem;
+        color:#000;
+        margin:4rem;
+        text-align:center;
+        
+        h2 {
+          font-size:6rem; 
+          span {
+            display:block;
+          }
+        }
+      }
+    }
+  }
   .featured-wrapper {
+    .row {
+      margin:0;
+    }
     .page-heading {
       margin-top:2rem;
       text-transform: uppercase;
@@ -47,6 +128,32 @@ body {
         }
         .card-text {
           display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px ) { 
+  .home-wrapper {
+    .home-slider {
+      .slide-one {
+        img {
+          margin-top:11%;
+          width:45%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px ) { 
+  .home-wrapper {
+    .home-slider {
+      .slide-one {
+        img {
+          margin-top:9%;
+          width:35%;
         }
       }
     }

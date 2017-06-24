@@ -24,11 +24,11 @@
         vertical-align: top;
 
         @include breakpoint("small") {
-            width: grid-calc(4, $total-columns);
+            width: grid-calc(6, $total-columns);
         }
 
         @include breakpoint("medium") {
-            width: grid-calc(3, $total-columns);
+            width: grid-calc(6, $total-columns);
         }
     }
 }
@@ -41,18 +41,18 @@
 //
 // -----------------------------------------------------------------------------
 
-.page-sidebar + .page-content {
+// .page-sidebar + .page-content {
 
-    .productGrid {
-        // scss-lint:disable SelectorDepth, NestingDepth
-        .product { // 1
-            @include breakpoint("small") {
-                width: grid-calc(4, $total-columns);
-            }
-        }
-    }
+//     .productGrid {
+//         // scss-lint:disable SelectorDepth, NestingDepth
+//         .product { // 1
+//             @include breakpoint("small") {
+//                 width: grid-calc(1, $total-columns);
+//             }
+//         }
+//     }
 
-}
+// }
 
 
 //

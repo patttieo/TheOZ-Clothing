@@ -1,0 +1,79 @@
+
+.m-header {
+  background:#fff;
+  text-align:center;
+  position:fixed;
+  width:100%;
+  display:block;
+  z-index: 20;
+  top:0;
+  left:0;
+  .menu-trigger {
+    position:absolute;
+    top:1rem;
+    left:1rem;
+    z-index: 20;
+    cursor: pointer;
+    i {
+      font-size:3rem;
+      color:#000;
+    }
+  }
+  .m-logo-wrap {
+    display:inline-block;
+    margin:0 auto;
+
+    img {
+      padding:1rem 0;
+      width:7rem;
+      padding-left:1rem;
+    }
+  }
+  .m-cart {
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    z-index: 20;
+    cursor: pointer;
+    i {
+      font-size:3rem;
+      color:#000;
+    }
+  }
+}
+.mobile-nav-wrapper {
+  width:0;
+  background:#fff url(../../assests/img/nav-bg.jpg) no-repeat;
+  background-size:cover;
+  height: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  border-radius: 0;
+  z-index: 20;
+  height:100vh;
+
+  .mobile-menu {
+    margin-top:7rem;
+    li {
+        list-style: none;
+        margin:1rem 0;
+      a {
+        color:#000;
+        font-size:2rem;
+        padding:1rem;
+      }
+    }
+  }
+  .m-social-links {
+    margin-left:1rem;
+    li {
+      margin-right:1rem;
+      display: inline-block;
+      a {
+        padding:0;
+      }
+    }
+  }
+}

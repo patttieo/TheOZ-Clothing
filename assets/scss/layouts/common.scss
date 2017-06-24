@@ -1,11 +1,19 @@
 body {
   font-family: "open-sans",sans-serif;
+  padding:0;
 }
 .body {
   margin-top: 0;
 }
 h1,h2,h3,h4 {
-  font-family: "jaf-bernina-sans",sans-serif;
+font-family: "balboa-plus-fill",sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+.b-plus {
+  font-family: "balboa-plus-primary",sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .inline {
   display: inline-block;
@@ -13,3 +21,52 @@ h1,h2,h3,h4 {
 .banners {
   display: none;
 }
+
+body {
+  &.home {
+    .container {
+      margin-top:0;
+    }
+    
+  }  
+  .container {
+    margin-top:90px;
+  }
+}
+
+
+.container {
+  position:relative;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+body {
+  &.m-active {
+    display: flex;
+    width: 100%;
+    overflow:hidden;
+    .footer-wrapper,
+    .body {
+      display:none;
+
+    }
+    .container {
+      transition: all 0.2s;
+      overflow: hidden;
+      right:-300px;
+    }
+    .mobile-nav-wrapper {
+      width:100%;
+      left:0;
+      transition: all 0.2s;
+    }
+  }
+}
+
+
+
+.card-figcaption-body {
+  display:none;
+}
+
