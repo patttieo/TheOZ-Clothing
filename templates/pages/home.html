@@ -52,10 +52,13 @@ blog:
             </div>
         </div>
         <div class="featured-wrapper">
-        {{#if products.featured}}
-          {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
-        {{/if}} 
+            <div class="container">
+            {{#if products.featured}}
+              {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+            {{/if}} 
+            </div>           
         </div>
+
 
     </div>
 </div>

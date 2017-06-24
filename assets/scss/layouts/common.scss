@@ -43,6 +43,7 @@ body {
 
 body {
   &.m-active {
+<<<<<<< HEAD
     display: flex;
     width: 100%;
     overflow:hidden;
@@ -51,18 +52,26 @@ body {
       display:none;
 
     }
+=======
+    overflow: hidden;
+>>>>>>> 50948d834c0d11e3750c7e2b1a3bf5d6173ae7bd
     .container {
       transition: all 0.2s;
       overflow: hidden;
       right:-300px;
     }
     .mobile-nav-wrapper {
+<<<<<<< HEAD
       width:100%;
+=======
+      width:300px;
+>>>>>>> 50948d834c0d11e3750c7e2b1a3bf5d6173ae7bd
       left:0;
       transition: all 0.2s;
     }
   }
 }
+<<<<<<< HEAD
 
 
 
@@ -70,3 +79,8 @@ body {
   display:none;
 }
 
+=======
+.product {
+  
+}
+>>>>>>> 50948d834c0d11e3750c7e2b1a3bf5d6173ae7bd

@@ -6,6 +6,8 @@
         {{{ head.config }}}
         {{#block "head"}} {{/block}}
         <link href="{{ head.favicon }}" rel="shortcut icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <script src="//use.typekit.net/tiq1uvb.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -26,7 +28,10 @@
     </head>
       <nav class="mobile-nav-wrapper hidden-md hidden-lg">
         <div class="mobile-menu">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 50948d834c0d11e3750c7e2b1a3bf5d6173ae7bd
             {{#each pages}}
                 <li>
                     <a href="{{url}}">{{name}}</a>
@@ -38,6 +43,7 @@
               </li>
           {{/each}}  
         </div>
+<<<<<<< HEAD
       </nav>   
     <body>
         <div class="background-overlay"></div>
@@ -55,6 +61,13 @@
             </div>
         </div>
 
+=======
+      </nav>    
+    <body>
+        <div class="menu-trigger hidden-md hidden-lg">
+          <i class="material-icons">menu</i>
+        </div>
+>>>>>>> 50948d834c0d11e3750c7e2b1a3bf5d6173ae7bd
         {{{snippet 'header'}}}
         <div class="icons-svg-sprite">{{> components/common/icons/icon-defs }}</div>
 
